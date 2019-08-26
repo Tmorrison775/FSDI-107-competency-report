@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Page for My Store</title>
+    <!--Styles-->
+    <link href="styles/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Register Items</h1>
+
+        <!--
+        title
+        desc
+        price
+        category
+        image : string = text
+    -->
+        <form>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Title</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtTitle" placeholder="Item Title">
+                </div>
+            </div><br>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Desc</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtDesc" placeholder="Item Description">
+                </div>
+            </div><br>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Price</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="txtPrice" placeholder="Item Price">
+                </div>
+            </div><br>
+
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Image</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtImage" placeholder="Item Image">
+                </div>
+            </div><br>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Category</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="selCategory">
+                        <option value="Keyboard">Keyboard</option>
+                        <option value="Mouse">Mouse</option>
+                        <option value="Monitor">Monitor</option>
+                    </select>
+                    <br>
+
+
+
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Stock</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" id="txtStock" placeholder="Item Stock">
+
+
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Priority</label>
+                        <div class="col-sm-10">
+                            <select id="selPriority">
+                                <option value="1">Low</option>
+                                <option value="2">Med</option>
+                                <option value="3">High</option>
+
+                            </select>
+
+                            <input id="btnSave" type="button" class="btn btn-primary" value="Save Items">
+
+
+                            <br>
+        </form>
+    </div>
+
+
+    <!--Scripts-->
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/admin.js"></script>
+</body>
+
+</html>
